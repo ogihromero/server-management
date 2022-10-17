@@ -1,0 +1,15 @@
+# Alterar configurações do db para o que tem localmente
+
+spring:
+  datasource:
+    password:
+    url: jdbc:mysql://localhost:3306/servermanagementdb
+    username:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
